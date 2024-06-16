@@ -3,8 +3,10 @@ package study.homeworks.lesson6;
 public class QA {
     public static void main(String[] args) {
         Department department = new Department();
-        department.removeEmployee();
-        department.removeEmployee();
+        department.addEmployee();
+        department.addEmployee();
+        department.addEmployee();
+        department.addEmployee();
         department.checkNumbersOfEmployee();
         department.showNumberOfEmployee();
         department.removeEmployee();

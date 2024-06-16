@@ -21,11 +21,18 @@ public class Department {
         return numberOfEmployee;
     }
     public void checkNumbersOfEmployee(){
-        if (numberOfEmployee > 10) {
+        boolean b = numberOfEmployee > 10;
+        boolean c = numberOfEmployee <= 8;
+        boolean d = numberOfEmployee == 9 || numberOfEmployee == 10;
+        if (b) {
+            c = true;
+            d = true;
             System.out.println("Штат сотрудников стал слишком большим");
-        } else if (numberOfEmployee <= 8) {
+        }
+        if (c) {
             System.out.println("В штате не хватает сотрудников");
-        } else if (numberOfEmployee == 9 || numberOfEmployee == 10) {
+        }
+        if (d) {
             System.out.println("В штате достаточное количество сотрудников");
         }
     }
