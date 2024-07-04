@@ -38,5 +38,10 @@ public class MapExample {
         System.out.println(stringsMap.containsValue("Barsic")); //проверить существует ли такое значение
 
         System.out.println(stringsMap.get("Fish")); //при отсутствии ключа выдается null
+
+
+        System.out.println(stringsMap);
+        stringsMap.put("Dog", "Reks");
+        System.out.println(stringsMap);
     }
 }
